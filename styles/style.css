@@ -1,3 +1,55 @@
-.navbar-bg {
-    background-image: url("../assets/photos/bgtexture.jpg");
+@font-face {
+    font-family: "Montauk-Light";
+    src: url("../assets/fonts/Montauk-Regular/Montauk-Light.otf");
+}
+@font-face {
+    font-family: "Montauk-Regular";
+    src: url("../assets/fonts/Montauk-Regular/Montauk-Regular.otf");
+}
+
+.navbar{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Fugaz One', sans-serif;
+    background-color: transparent !important;
+}
+
+.nav-link{
+    margin-right: 100px;
+}
+
+body {
+    background-image: url(../assets/photos/bgtexture.jpg);
+}
+
+.hero-container {
+    min-height: 60vh;
+    background: url(../assets/photos/homeHero.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.home-image-overlay {
+    background-color: white;
+    color: #5F002B;
+}
+
+.home-image-overlay h1 {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 50px;
+}
+.home-image-overlay p {
+    font-family: 'Montauk-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.foot {
+    width: 85%;
+    position: relative;
+    font-family: 'Montauk-Light';
+    color: rgba(95, 0, 43, 1);
+    font-weight: lighter;
+    font-size: 20px;
 }
