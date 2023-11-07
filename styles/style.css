@@ -1,9 +1,14 @@
+body {
+    background: url(../assets/photos/bgtexture.jpg);
+    height: fit-content;
+}
+
 @font-face {
     font-family: "Montauk-Light";
     src: url("../assets/fonts/Montauk-Regular/Montauk-Light.otf");
 }
 
-.navbar{
+.navbar {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -11,19 +16,39 @@
     background-color: transparent !important;
 }
 
-.navlink{
-    margin-right: 100px;
+.nav-link {
+    padding-left: 10px !important;
 }
 
-body {
-    background: url(../assets/photos/bgtexture.jpg);
-    height: fit-content;
-}
-
-.HeaderText{
+.HeaderText {
     font-family: 'Fugaz One', sans-serif;
     color: rgba(95, 0, 43, 1);
     font-size: 3em;
+}
+
+.photosDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PhotosRow {
+    height: 95%;
+    column-gap: 8px;
+}
+
+.PhotosCol {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 18px;
+}
+
+.ListImg {
+    border: solid white .5vw;
+    height: 398px;
+    width: 398px;
 }
 
 .foot {
@@ -35,38 +60,23 @@ body {
     font-size: 20px;
 }
 
-.ListImg{
-    border: solid white .5vw;
-    padding: 0px;
-    height: 398px;
-    width: 398px;
-}
-
-.PhotosCol{
-    padding: 0;
-    width: min-content;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 18px;
-}
-
-.PhotosRow{
-    width: 100%;
-    height: 95%;
-    column-gap: 8px;
-
-}
-
-.photosDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 500px){
-    .ListImg{
+@media screen and (max-width: 500px) {
+    .ListImg {
         height: 262px;
         width: 262px;
+    }
+}
+
+@media screen and (max-width: 1901px) {
+
+    .photosDiv {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1395px) {
+
+    .photosDiv {
+        flex-direction: column;
     }
 }
