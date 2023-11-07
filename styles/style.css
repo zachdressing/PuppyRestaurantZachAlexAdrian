@@ -29,7 +29,6 @@ body {
 .foot {
     width: 85%;
     position: relative;
-    bottom: 0;
     font-family: 'Montauk-Light';
     color: rgba(95, 0, 43, 1);
     font-weight: lighter;
