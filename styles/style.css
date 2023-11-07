@@ -35,7 +35,7 @@ body {
 
 .PhotosRow {
     height: 95%;
-    column-gap: 8px;
+    width: 100%;
 }
 
 .PhotosCol {
@@ -74,7 +74,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1395px) {
+@media screen and (max-width: 1423px) {
 
     .photosDiv {
         flex-direction: column;
