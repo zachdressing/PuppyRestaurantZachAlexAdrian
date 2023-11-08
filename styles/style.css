@@ -35,6 +35,13 @@ body {
     font-size: 20px;
 }
 
+.menuFont {
+    font-family: 'Montauk-Light';
+    color: rgba(95, 0, 43, 1);
+    font-weight: lighter;
+    font-size: 20px;
+}
+
 .ListImg{
     border: solid white .5vw;
     padding: 0px;
@@ -83,3 +90,4 @@ body {
         width: 262px;
     }
 }
+
