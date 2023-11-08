@@ -2,12 +2,13 @@
     font-family: "Montauk-Light";
     src: url("../assets/fonts/Montauk-Regular/Montauk-Light.otf");
 }
+
 @font-face {
     font-family: "Montauk-Regular";
     src: url("../assets/fonts/Montauk-Regular/Montauk-Regular.otf");
 }
 
-.navbar{
+.navbar {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -15,19 +16,16 @@
     background-color: transparent !important;
 }
 
-.nav-link{
-    margin-right: 100px;
-}
-
 body {
     background-image: url(../assets/photos/bgtexture.jpg);
 }
 
-.hero-container {
-    min-height: 60vh;
+.herocontainer {
+    height: 600px;
     background: url(../assets/photos/homeHero.jpg);
+    background-position: center;
     background-size: cover;
-    margin: 0 auto;
+    background-repeat: no-repeat;
 }
 
 .home-image-overlay {
@@ -39,6 +37,7 @@ body {
     font-family: 'Fugaz One', sans-serif;
     font-size: 50px;
 }
+
 .home-image-overlay p {
     font-family: 'Montauk-Regular', sans-serif;
     font-size: 20px;
