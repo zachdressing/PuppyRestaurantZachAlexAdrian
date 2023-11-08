@@ -31,6 +31,9 @@ body {
 .home-image-overlay {
     background-color: white;
     color: #5F002B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .home-image-overlay h1 {
