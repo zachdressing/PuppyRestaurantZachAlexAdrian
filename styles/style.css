@@ -36,6 +36,18 @@ body {
     justify-content: space-between;
 }
 
+.about-rectangle {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.about-rectangle p {
+    color: #5F002B;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 30px;
+}
+
 .home-image-overlay h1 {
     font-family: 'Fugaz One', sans-serif;
     font-size: 50px;
@@ -54,4 +66,21 @@ body {
     color: rgba(95, 0, 43, 1);
     font-weight: lighter;
     font-size: 20px;
+}
+
+.card h5 {
+    font-family: 'Fugaz One', sans-serif;
+    color: #5F002B;
+    font-size: 30px;
+}
+
+.card, .card-img-top {
+    border-radius: 0;
+}
+
+.card p {
+    font-family: 'Montauk-Light', sans-serif;
+    color: #5F002B;
+    font-size: 20px;
+    line-height: 20px;
 }
