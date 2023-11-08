@@ -96,6 +96,20 @@ body {
     font-size: 20px;
 }
 
+.white-bg{
+    background-color: white;    
+}
+
+.menuList{
+    padding: 10px;
+}
+
+.menuImage{
+    width: 100%;
+    height: auto;
+}
+
+
 @media screen and (max-width: 500px) {
     .ListImg {
         height: 262px;
