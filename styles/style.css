@@ -1,6 +1,6 @@
 body {
     background: url(../assets/photos/bgtexture.jpg);
-    height: fit-content;
+    width: 100%;
 }
 
 @font-face {
@@ -13,24 +13,79 @@ body {
     src: url("../assets/fonts/Montauk-Regular/Montauk-Regular.otf");
 }
 
-.navbar {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Fugaz One', sans-serif;
-    background-color: transparent !important;
-}
-
-.nav-link {
-    padding-left: 10px !important;
-}
-
 .HeaderText {
     font-family: 'Fugaz One', sans-serif;
     color: rgba(95, 0, 43, 1);
     font-size: 3em;
 }
 
+
+
+
+                                                /* Nav and Footer CSS */
+.navbar {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Fugaz One', sans-serif;
+    background-color: transparent !important;
+    margin-bottom: 41px;
+}
+
+.navbar button {
+    background-color: rgba(95, 0, 43, 1);
+}
+
+.navbar-nav h5 {
+    color: rgba(95, 0, 43, 1);
+}
+
+.nav-link {
+    padding: 0px 25px !important;
+}
+
+footer {
+    width: 85%;
+    font-family: 'Montauk-Light';
+    color: rgba(95, 0, 43, 1);
+    font-weight: lighter;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerEnd {
+    text-align: end;
+}
+
+                                                /* End of Nav and Foot CSS */
+
+
+
+                                                /* Menu CSS */
+.menuList {
+    padding: 10px;
+}
+
+.menuImage {
+    width: 100%;
+    height: auto;
+}
+
+.menuFont {
+    font-family: 'Montauk-Light';
+    color: rgba(95, 0, 43, 1);
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+                                                /* End of Menu CSS */
+
+
+
+                                                /* Photos CSS */
 .photosDiv {
     display: flex;
     flex-direction: column;
@@ -56,10 +111,11 @@ body {
     width: 398px;
 }
 
-body {
-    background-image: url(../assets/photos/bgtexture.jpg);
-}
+                                                /* End of Photos CSS */
 
+
+
+                                                /* Home CSS */
 .herocontainer {
     height: 600px;
     background: url(../assets/photos/homeHero.jpg);
@@ -74,6 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 350px;
 }
 
 .home-image-overlay h1 {
@@ -82,38 +139,106 @@ body {
 }
 
 .home-image-overlay p {
-    font-family: 'Montauk-Regular', sans-serif;
+    font-family: 'Montauk-Light', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+}
+                                                /* End of Home CSS */
+
+
+
+                                                /* About CSS */
+
+.aboutMainText{
+    background-color: white;
+    color: #5F002B;
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+
+}
+
+.aboutMainText p {
+    font-family: 'Montauk-Light', sans-serif;
     font-size: 20px;
     line-height: 22px;
 }
 
-.foot {
-    width: 85%;
-    position: relative;
-    font-family: 'Montauk-Light';
-    color: rgba(95, 0, 43, 1);
-    font-weight: lighter;
-    font-size: 20px;
+.aboutMainText h1 {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 50px;
 }
 
-.white-bg{
-    background-color: white;    
-}
-
-.menuList{
-    padding: 10px;
-}
-
-.menuImage{
+.about-rectangle {
     width: 100%;
-    height: auto;
+    height: 80px;
+    background-color: white;
+}
+
+.about-rectangle p {
+    color: #5F002B;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 30px;
+}
+
+.card h5 {
+    font-family: 'Fugaz One', sans-serif;
+    color: #5F002B;
+    font-size: 30px;
+}
+
+.card,
+.card-img-top {
+    border-radius: 0;
+}
+
+.card p {
+    font-family: 'Montauk-Light', sans-serif;
+    color: #5F002B;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contentRow {
+    width: 85%;
+}
+                                                /* End of About CSS */                                                            
+
+
+.white-bg {
+    background-color: white;
 }
 
 
-@media screen and (max-width: 500px) {
+
+
+
+@media screen and (max-width: 425px) {
+
+    footer {
+        display: flex;
+        text-wrap: nowrap;
+        text-align: center;
+    }
+
+    .footerEnd {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
     .ListImg {
         height: 262px;
         width: 262px;
+    }
+
+    .contentRow {
+        width: 100%;
+    }
+
+    .home-image-overlay {
+        text-align: center;
     }
 }
 
