@@ -107,6 +107,7 @@ footer {
     padding-top: 56px;
     padding-bottom: 120px;
 }
+
 /* End of Menu CSS */
 
 
@@ -274,10 +275,49 @@ footer {
 
 
 
+/* Catering CSS */
+.cateringImage {
+    width: 100%;
+    height: auto;
+}
+
+.cateringTextDiv {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cateringTextDiv .row {
+    padding: 0;
+    height: 365px !important;
+    width: 85%;
+}
+
+.cateringText {
+    background-color: white;
+    color: #5F002B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 350px;
+    max-height: 365px;
+    max-width: 950px;
+    overflow: scroll;
+    padding: 40px 40px 0px 40px;
+    line-height: 20px;
+}
+
+/* End of Catering CSS */
 
 
 
+@media screen and (max-width: 375px) {
 
+    .cateringTextDiv {
+        justify-content: start;
+    }
+}
 
 @media screen and (max-width: 425px) {
 
@@ -300,13 +340,19 @@ footer {
         height: 100%;
     }
 
-    .menuDiv{
+    .menuDiv {
         width: auto;
     }
 
-    .Banner{
-        width: auto;
+    .cateringTextDiv .row {
+        width: 85%;
     }
+
+    .cateringText {
+        text-align: center;
+        width: 85;
+    }
+
 }
 
 
