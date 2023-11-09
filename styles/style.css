@@ -32,7 +32,6 @@ body {
 
 
 
-
 /* Nav and Footer CSS */
 .navbar {
     width: 85%;
@@ -83,6 +82,7 @@ footer {
 .menuImage {
     width: 100%;
     height: auto;
+    min-width: 400px;
 }
 
 .menuFont {
@@ -92,6 +92,21 @@ footer {
     font-size: 20px;
 }
 
+.menuCol {
+    background-color: white;
+    margin-bottom: 20px;
+    height: 796.55px;
+    overflow: scroll;
+    min-width: 400px;
+}
+
+.menuDiv {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 56px;
+    padding-bottom: 120px;
+}
 /* End of Menu CSS */
 
 
@@ -155,6 +170,10 @@ footer {
     line-height: 22px;
 }
 
+.contentRow {
+    width: 85%;
+}
+
 /* End of Home CSS */
 
 
@@ -177,7 +196,7 @@ footer {
     line-height: 22px;
     padding-left: 40px;
     padding-right: 64px;
-    
+
 }
 
 .aboutMainText h1 {
@@ -185,11 +204,11 @@ footer {
     font-size: 50px;
     padding-top: 30px;
     padding-left: 40px;
-    
-    
+
+
 }
 
-.aboutCards{
+.aboutCards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,20 +219,20 @@ footer {
     margin-right: auto;
 }
 
-.aboutCards .row{
+.aboutCards .row {
     width: 100%;
     display: flex;
     justify-content: center;
     column-gap: 20px;
 }
 
-.aboutCards .col{
+.aboutCards .col {
     padding: 0;
     padding-bottom: 20px;
     max-width: min-content;
 }
 
-.aboutCards .card{
+.aboutCards .card {
     border: none;
     height: 732px;
     width: 530px;
@@ -231,10 +250,6 @@ footer {
     color: #5F002B;
     font-family: 'Fugaz One', sans-serif;
     font-size: 30px;
-}
-
-.card{
-    
 }
 
 .card h5 {
@@ -255,16 +270,10 @@ footer {
     line-height: 20px;
 }
 
-.contentRow {
-    width: 85%;
-}
-
 /* End of About CSS */
 
 
-.white-bg {
-    background-color: white;
-}
+
 
 
 
@@ -282,13 +291,21 @@ footer {
         text-align: center;
     }
 
-    .aboutCards .col{
+    .aboutCards .col {
         max-width: none;
     }
 
-    .aboutCards .card{
+    .aboutCards .card {
         width: 100%;
         height: 100%;
+    }
+
+    .menuDiv{
+        width: auto;
+    }
+
+    .Banner{
+        width: auto;
     }
 }
 
@@ -307,11 +324,11 @@ footer {
         text-align: center;
     }
 
-    .aboutMainText{
+    .aboutMainText {
         text-align: center;
     }
 
-    .aboutMainText h1{
+    .aboutMainText h1 {
         padding-left: 0;
     }
 }
@@ -332,11 +349,12 @@ footer {
     .photosDiv {
         flex-direction: column;
     }
+
     .aboutCards {
         flex-direction: column;
     }
 
-    .navbar .text-center{
-        text-align: end!important;
+    .navbar .text-center {
+        text-align: end !important;
     }
 }
