@@ -28,6 +28,7 @@ body {
     height: 80px;
     margin-left: auto;
     margin-right: auto;
+    min-width: 360px;
 }
 
 
@@ -406,5 +407,10 @@ footer {
 
     .navbar .text-center {
         text-align: end !important;
+    }
+
+    .aboutCards .card{
+        width: auto;
+        height: fit-content;
     }
 }
