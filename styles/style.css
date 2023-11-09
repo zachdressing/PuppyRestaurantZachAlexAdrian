@@ -379,13 +379,16 @@ footer {
     }
 }
 
+@media screen and (max-width: 1024px)
+{
+    .aboutCards{
+        flex-direction: row;
+    }
+}
+
 @media screen and (max-width: 1901px) {
 
     .photosDiv {
-        flex-direction: row;
-    }
-
-    .aboutCards {
         flex-direction: row;
     }
 }
