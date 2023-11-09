@@ -15,14 +15,25 @@ body {
 
 .HeaderText {
     font-family: 'Fugaz One', sans-serif;
-    color: rgba(95, 0, 43, 1);
+    color: #5F002B;
     font-size: 3em;
+}
+
+.Banner {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: white;
+    width: 85%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 
 
-                                                /* Nav and Footer CSS */
+/* Nav and Footer CSS */
 .navbar {
     width: 85%;
     margin-left: auto;
@@ -33,21 +44,21 @@ body {
 }
 
 .navbar button {
-    background-color: rgba(95, 0, 43, 1);
+    background-color: #5F002B;
 }
 
 .navbar-nav h5 {
-    color: rgba(95, 0, 43, 1);
+    color: #5F002B;
 }
 
-.nav-link {
-    padding: 0px 25px !important;
+.navbar-nav {
+    column-gap: 3%;
 }
 
 footer {
     width: 85%;
     font-family: 'Montauk-Light';
-    color: rgba(95, 0, 43, 1);
+    color: #5F002B;
     font-weight: lighter;
     font-size: 20px;
     display: flex;
@@ -60,11 +71,11 @@ footer {
     text-align: end;
 }
 
-                                                /* End of Nav and Foot CSS */
+/* End of Nav and Foot CSS */
 
 
 
-                                                /* Menu CSS */
+/* Menu CSS */
 .menuList {
     padding: 10px;
 }
@@ -76,16 +87,16 @@ footer {
 
 .menuFont {
     font-family: 'Montauk-Light';
-    color: rgba(95, 0, 43, 1);
+    color: #5F002B;
     font-weight: lighter;
     font-size: 20px;
 }
 
-                                                /* End of Menu CSS */
+/* End of Menu CSS */
 
 
 
-                                                /* Photos CSS */
+/* Photos CSS */
 .photosDiv {
     display: flex;
     flex-direction: column;
@@ -111,11 +122,11 @@ footer {
     width: 398px;
 }
 
-                                                /* End of Photos CSS */
+/* End of Photos CSS */
 
 
 
-                                                /* Home CSS */
+/* Home CSS */
 .herocontainer {
     height: 600px;
     background: url(../assets/photos/homeHero.jpg);
@@ -143,30 +154,71 @@ footer {
     font-size: 20px;
     line-height: 22px;
 }
-                                                /* End of Home CSS */
+
+/* End of Home CSS */
 
 
 
-                                                /* About CSS */
-
-.aboutMainText{
+/* About CSS */
+.aboutMainText {
     background-color: white;
     color: #5F002B;
     display: flex;
     flex-direction: column;
     min-width: 350px;
-
+    padding: 0;
+    max-height: 675px;
+    overflow: scroll;
 }
 
 .aboutMainText p {
     font-family: 'Montauk-Light', sans-serif;
     font-size: 20px;
     line-height: 22px;
+    padding-left: 40px;
+    padding-right: 64px;
+    
 }
 
 .aboutMainText h1 {
     font-family: 'Fugaz One', sans-serif;
     font-size: 50px;
+    padding-top: 30px;
+    padding-left: 40px;
+    
+    
+}
+
+.aboutCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 34px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutCards .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.aboutCards .col{
+    padding: 0;
+    padding-bottom: 20px;
+    max-width: min-content;
+}
+
+.aboutCards .card{
+    border: none;
+    height: 732px;
+    width: 530px;
+    margin: 0;
+    min-width: 360px;
 }
 
 .about-rectangle {
@@ -179,6 +231,10 @@ footer {
     color: #5F002B;
     font-family: 'Fugaz One', sans-serif;
     font-size: 30px;
+}
+
+.card{
+    
 }
 
 .card h5 {
@@ -202,7 +258,8 @@ footer {
 .contentRow {
     width: 85%;
 }
-                                                /* End of About CSS */                                                            
+
+/* End of About CSS */
 
 
 .white-bg {
@@ -224,6 +281,15 @@ footer {
     .footerEnd {
         text-align: center;
     }
+
+    .aboutCards .col{
+        max-width: none;
+    }
+
+    .aboutCards .card{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -240,6 +306,14 @@ footer {
     .home-image-overlay {
         text-align: center;
     }
+
+    .aboutMainText{
+        text-align: center;
+    }
+
+    .aboutMainText h1{
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 1901px) {
@@ -247,11 +321,22 @@ footer {
     .photosDiv {
         flex-direction: row;
     }
+
+    .aboutCards {
+        flex-direction: row;
+    }
 }
 
-@media screen and (max-width: 1423px) {
+@media screen and (max-width: 1440px) {
 
     .photosDiv {
         flex-direction: column;
+    }
+    .aboutCards {
+        flex-direction: column;
+    }
+
+    .navbar .text-center{
+        text-align: end!important;
     }
 }
