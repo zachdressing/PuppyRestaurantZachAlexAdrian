@@ -292,6 +292,8 @@ footer {
     padding: 0;
     height: 365px !important;
     width: 85%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cateringText {
@@ -302,7 +304,6 @@ footer {
     justify-content: space-between;
     min-width: 350px;
     max-height: 365px;
-    max-width: 950px;
     overflow: scroll;
     padding: 40px 40px 0px 40px;
     line-height: 20px;
